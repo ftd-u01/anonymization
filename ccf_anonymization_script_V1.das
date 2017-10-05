@@ -38,7 +38,18 @@
 - (0010,0034)                                                                        // Patient Death Date in Alternative Calendar
 - (0010,1100)                                                                        // Referenced Patient Photo Sequence
 - (0010,2155)                                                                        // Patient Telecom Information
- 
+// Suggestions from Mayo.
+- (0008,0081)                                                                        // InstitutionAddress
+- (0008,0090)                                                                        // ReferringPhysiciansName
+- (0008,1010)                                                                        // StationName
+- (0008,1040)                                                                        // Institutional Department Name
+- (0008,1048)                                                                        // PhysiciansOfRecord
+- (0008,1049)                                                                        // PhysiciansOfRecordIdentificationSequence
+- (0008,1050)                                                                        // PerformingPhysiciansName
+- (0008,1070)                                                                        // OperatorsName
+- (0008,1072)                                                                        // OperatorIdentificationSequence
+
+
 // Set XNAT identifying fields
 (0008,1030) := project
 (0010,0010) := subject

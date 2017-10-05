@@ -31,6 +31,7 @@
 - (0010,2298)                                                                        // Responsible Person Role
 - (0010,2299)                                                                        // Responsible Organization
 (0012,0063) := "CCF common deidentification v001"
+(0020,000D) := hashUID[(0020,000D)]                                                  // Study Instance ID
 - (0038,0500)                                                                        // Patient State
 - (0038,0100)                                                                        // Pertinent Documents SQ
 - (0040,1400)                    	                                             // Requested Procedure Comments
@@ -48,7 +49,8 @@
 - (0008,1050)                                                                        // PerformingPhysiciansName
 - (0008,1070)                                                                        // OperatorsName
 - (0008,1072)                                                                        // OperatorIdentificationSequence
-
+- (0008,0080)                                                                        // InstitutionName
+(0018,1000) := hashUID[(0018,1000)]                                                  // DeviceSerialNumber
 
 // Set XNAT identifying fields
 (0008,1030) := project

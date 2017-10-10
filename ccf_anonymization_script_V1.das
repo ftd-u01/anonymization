@@ -52,6 +52,9 @@
 - (0008,0080)                                                                        // InstitutionName
 (0018,1000) := hashUID[(0018,1000)]                                                  // DeviceSerialNumber
 
+- (0032,1032)                                                                        // Requesting Physician
+
+
 // Set XNAT identifying fields
 (0008,1030) := project
 (0010,0010) := subject

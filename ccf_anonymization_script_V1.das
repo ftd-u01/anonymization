@@ -1,4 +1,8 @@
 // This is a modification of the DIAN common deidentification script
+// It should be noted that this has been tested to work on Siemens scanners on a wide variety of sequences. It has been
+// shown to fail when Siemens scans have been pushed around PACS systems. One example is a particular Fujifilm PACS 
+// system that appends to the bottom of private tags which already have data. In this example. Fujifilm was copying
+// HIPAA information into the bottom of a private tag that had other valuable imaging data (bvecs & bvals etc.)
 - (0008,0050)                                                                        // Accession Number
 - (0010,0021)                                                                        // Issuer of Patient ID
 - (0010,0030)                                                                        // Patient's Birth Date
